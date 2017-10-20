@@ -1,0 +1,37 @@
+1、JavaScript历史
+    网景公司希望能在静态HTML页面上添加一些动态效果，Brendan Eich用了10天时间设计出JavaScript语言。
+
+2、ECMAScript
+    因为网景开发了JavaScript，一年后微软又模仿JavaScript开发了JScript，为了让JavaScript成为全球标准，几个公司联合ECMA（European Computer Manufacturers Association）组织定制了JavaScript语言的标准，被称为ECMAScript标准。
+    简单说来就是，ECMAScript是一种语言标准，而JavaScript是网景公司对ECMAScript标准的一种实现。
+    2015年6月17日，ECMAScript 6发布正式版本，即ECMAScript 2015。
+    link--<https://baike.baidu.com/item/ECMAScript/1889420?fr=aladdin>
+
+3、JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<head>中
+<html>
+<head>
+    <script>
+        alert('Hello World');
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
+    由<script>...</script>包含的代码就是JavaScript代码，它将直接被浏览器执行。
+    第二种方法把JavaScript代码放到一个单独的.js文件，然后在HTML中通过<script src="..."></script>引入这个文件：
+ <html>
+ <head>
+    <script src='/static/js/abc.js'></script>
+ </head>
+ <body>
+ ...
+ </body>
+ </html>
+    把JavaScript代码放入一个单独的.js文件中更利于维护代码，并且多个页面可以各自引用同一份.js文件。
+
+ 4、运行JavaScript
+ 要让浏览器运行JavaScript，必须先有一个HTML页面，在HTML页面中引入JavaScript，然后，让浏览器加载该HTML页面，就可以执行JavaScript代码。
+
+ 5、调试
+ 使用Chrome浏览器，然后点击菜单“查看(View)”-“开发者(Developer)”-“开发者工具(Developer Tools)”，浏览器窗口就会一分为二，下方就是开发者工具
