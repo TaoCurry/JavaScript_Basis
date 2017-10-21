@@ -78,8 +78,24 @@ arr.splice(2, 2);  // 只删除不添加
 arr;    // [1, 2, 6, 7]
 arr.splice(2, 0, 'A', 'C');  //只添加不删除
 
+/*concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array*/
+var arr = ['A', 'B', 'C'];
+var added = arr.concat([1, 2, 3])
+added;  //['A', 'B', 'C', 1, 2, 3]
+arr;    //['A', 'B', 'C']
+//concat()方法并没有修改当前Array，而是返回了一个新的Array
 
+var arr = [1, 2, 3];
+var add_arr = arr.concat([4, 5, [7, 8, 9]]);
+add_arr;    //[1, 2, 3, 4, 5, 6, 7, 8, 9]
+//concat()方法可以接收任意个元素和Array，并且自动把Array拆开，然后全部添加到新的Array中
 
+/*join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串*/
+var arr = ['A', 'B', 'C', 1, 2, 3];
+arr.join('+');  //'A+B+C+1+2+3'
+
+/*多维数组 数组中包含数组*/
+var arr = [[1, 2, 3], '-', [4, 5, 6]];
 
 
 
