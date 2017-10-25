@@ -34,3 +34,4 @@ var arr = [1, 3, 5, 7, 9];
 arr.reduce(function (x, y) {
     return 10 * x + y;
 });
+
