@@ -2,31 +2,31 @@
 /*JavaScript的对象是一种无序的集合数据类型，它由若干键值对组成。
 JavaScript的对象用于描述现实世界中的某个对象,例如，为了描述“小明”这个淘气的小朋友，我们可以用若干键值对来描述他*/
 var xiaoming = {
-    name : 'xiaoming',
-    birth : 1990,
-    school : 'No.1 Middle School',
-    height : 1.70,
-    weight : 65,
-    score : 90
+    name: 'xiaoming',
+    birth: 1990,
+    school: 'No.1 Middle School',
+    height: 1.70,
+    weight: 65,
+    score: 90
 };
 /*JavaScript用一个{...}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。注意，最后一个键值对不需要在末尾加,，如果加了，有的浏览器（如低版本的IE）将报错。*/
 xiaoming.name;  //xiaoming的name属性
 xiaoming.birth; //xiaoming的birth属性
 
-var xiaohong ={
-    name : '小红',
-    'middle-school' : 'No.1 Middle School'  //如果属性名包含特殊字符，就必须用''括起来
+var xiaohong = {
+    name: '小红',
+    'middle-school': 'No.1 Middle School'  //如果属性名包含特殊字符，就必须用''括起来
 };
 xiaohong['middle-school']; //访问包含特殊字符的属性，必须用['xxx']来访问，不使用.操作符
 xiaohong[name]; // === xiaohong.name
 
 var xiaoming = {
-    name : '小明'
+    name: '小明'
 };
 xiaoming.age;   //访问一个不存在的属性，返回undefined
 
 var xiaoming = {
-    name : '小明'
+    name: '小明'
 };
 xiaoming.age;   // undefined
 xiaoming.age = 18;  //新增一个age属性
@@ -39,12 +39,12 @@ delete xiaoming.school; //删除一个不存在的school属性也不会报错
 
 /*要检测xiaoming是否拥有某一属性，可以用in操作符*/
 var xiaoming = {
-    name : '小明',
-    birth : 1990,
-    school : 'No.1 Middle School',
-    height : 1.70,
-    weight : 65,
-    score : null
+    name: '小明',
+    birth: 1990,
+    school: 'No.1 Middle School',
+    height: 1.70,
+    weight: 65,
+    score: null
 };
 'name' in xiaoming;     // true
 'grade' in xiaoming;    // false
@@ -54,7 +54,7 @@ var xiaoming = {
 
 /*要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法*/
 var xiaoming = {
-    name : '小明'
+    name: '小明'
 };
 xiaoming.hasOwnProperty('name');  // true
 xiaoming.hasOwnProperty('toString');    // false
