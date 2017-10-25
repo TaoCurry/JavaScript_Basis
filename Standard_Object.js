@@ -40,3 +40,15 @@ typeof b2;  // 'boolean'
 
 var s = String(123.456);    // '123.456'
 typeof s;   // 'string'
+
+/* summarize */
+/*
+1、不要使用new Number()、new Boolean()、new String()创建包装对象；
+2、用parseInt()或parseFloat()来转换任意类型到number；
+3、用String()来转换任意类型到string，或者直接调用某个对象的toString()方法；
+4、通常不必把任意类型转换为boolean再判断，因为可以直接写if (myVar) {...}；
+5、typeof操作符可以判断出number、boolean、string、function和undefined；
+6、判断Array要使用Array.isArray(arr)；
+7、判断null请使用myVar === null；
+8、判断某个全局变量是否存在用typeof window.myVar === 'undefined'；
+9、函数内部判断某个变量是否存在用typeof myVar === 'undefined'。*/
