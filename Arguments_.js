@@ -1,12 +1,14 @@
 'use strict';
+
 /*JavaScript还有一个关键字arguments，它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数。
     arguments类似Array但它不是一个Array*/
 function foo(x) {
     alert(x);   // 10
-    for (var i=0; i<arguments.length; i++) {
+    for (var i = 0; i < arguments.length; i++) {
         alert(arguments[i]);    // 拿到foo()调用的三个参数：10, 20, 30
     }
 }
+
 foo(10, 20, 30);
 
 // 函数不定义任何参数的时候，依然可以拿到参数的值（实参）
