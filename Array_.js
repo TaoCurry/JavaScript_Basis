@@ -29,7 +29,7 @@ arr.indexOf('xyz'); // 3
 
 //slice: slice()就是对应String的substring()版本，它截取Array的部分元素，然后返回一个新的Array
 var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-arr.slice(0,3); //['A', 'B', 'C'] From index[0] to index[3](not included index[3])
+arr.slice(0, 3); //['A', 'B', 'C'] From index[0] to index[3](not included index[3])
 arr.slice(3);   //form index[3] to the end ['D', 'E', 'F', 'G']
 
 //copy
@@ -71,7 +71,7 @@ arr.reverse();
 arr; //[3, 2, 1]
 
 /*splice()方法是修改Array的“万能方法”，它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素*/
-var arr = [1, 2, 3, 4, 5, 6,7];
+var arr = [1, 2, 3, 4, 5, 6, 7];
 arr.splice(2, 3, 'A', 'C');  //从索引2开始删除3个元素，然后再索引2初添加'A' 'C'两个元素
 arr;    //[1, 2, 'A', 'C', 6, 7]
 arr.splice(2, 2);  // 只删除不添加
