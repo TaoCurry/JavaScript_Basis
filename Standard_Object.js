@@ -46,6 +46,7 @@ typeof s;   // 'string'
 1、不要使用new Number()、new Boolean()、new String()创建包装对象；
 2、用parseInt()或parseFloat()来转换任意类型到number；
 3、用String()来转换任意类型到string，或者直接调用某个对象的toString()方法；
+<null和undefined没有toString()方法>
 4、通常不必把任意类型转换为boolean再判断，因为可以直接写if (myVar) {...}；
 5、typeof操作符可以判断出number、boolean、string、function和undefined；
 6、判断Array要使用Array.isArray(arr)；
